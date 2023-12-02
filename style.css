@@ -1,0 +1,225 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 Nov 2023, 2:07:30 pm
+    Author     : User
+*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: plum;
+}
+
+/* Default styles for larger screens */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mobile-nav {
+    display: none; /* Initially hide the mobile dropdown */
+}
+
+nav img {
+    margin-left: auto;
+    display: inline;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    float: left;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+li a:hover {
+  background-color: deeppink;
+}
+
+section {
+    padding: 20px;
+}
+
+.project-card img {
+            max-width: 100%;
+            height: auto;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+form {
+    text-align: left;
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+form label {
+    display: block; /* Make labels stack on top of inputs */
+    margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+form input,
+form textarea {
+    width: 100%; /* Make inputs and textarea full-width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 8px; /* Add some padding for better readability */
+    margin-bottom: 10px; /* Add spacing between inputs and textarea */
+}
+
+form button {
+    width: 100%; /* Make the button full-width */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+.profile-image {
+    width: 340px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.professional-description {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    form {
+        max-width: 100%; /* Adjust maximum width for smaller screens */
+    }
+}
+
+h2{
+    font-size: 40px;
+}
+
+button[type=submit] {
+  width: 10%;
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px 5px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: navy;
+}
+
+.center-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about img {   
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    color: #333;
+}
+
+.about h3 {
+    color: #555;
+}
+
+.about h4 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.family,
+.education,
+.hobby {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.family img,
+.education img,
+.hobby img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
